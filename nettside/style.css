@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #00BFFF; /* Deep Sky Blue */
+    --dark-bg: #1a1a1a;
+    --dark-card-bg: #2a2a2a;
+    --light-text: #f8f9fa;
+    --secondary-text: #adb5bd;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+}
+
+.navbar {
+    transition: background-color 0.5s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(26, 26, 26, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    color: var(--light-text) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url('https://www.transparenttextures.com/patterns/cubes.png');
+    padding: 150px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.hero-section .lead {
+    color: var(--secondary-text);
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 700;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #009acd;
+    border-color: #009acd;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 80px 0;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.feature-card, .testimonial-card, .process-step {
+    background-color: var(--dark-card-bg);
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover, .testimonial-card:hover, .process-step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 191, 255, 0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.process-step .process-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+.testimonial-card p {
+    color: var(--secondary-text);
+}
+
+.testimonial-card .author {
+    font-weight: 700;
+    color: var(--light-text);
+    margin-top: 15px;
+}
+
+#contact {
+    background-color: var(--dark-card-bg);
+}
+
+.form-control {
+    background-color: #333;
+    border: 1px solid #444;
+    color: var(--light-text);
+}
+
+.form-control:focus {
+    background-color: #333;
+    border-color: var(--primary-color);
+    color: var(--light-text);
+    box-shadow: 0 0 0 0.25rem rgba(0, 191, 255, 0.25);
+}
+
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    color: var(--secondary-text);
+}
+
+/* Animation */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.slide-in-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-left.visible, .slide-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
