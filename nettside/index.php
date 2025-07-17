@@ -45,7 +45,9 @@
                     <p>Sveiv is a sports-tech company dedicated to making 3D motion analysis accessible to everyone. Our innovative markerless motion capture technology allows athletes, coaches, and enthusiasts to analyze movement with unprecedented ease and accuracy. We believe that by removing the barriers of expensive hardware and complex setups, we can unlock the full potential of human performance.</p>
                 </div>
                 <div class="col-lg-6 slide-in-right">
-                    <img src="https://static.photos/technology/600x300/42" alt="Abstract technology visualization" style="border-radius: 15px;">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 300px;">
+                        <i class="fas fa-robot" style="font-size: 8rem; color: var(--primary-color);"></i>
+                    </div>
                 </div>
             </div>
         </div>
